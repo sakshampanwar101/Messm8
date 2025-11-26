@@ -101,16 +101,6 @@ This provisions sample users:
 Students may also self-register via `POST /api/auth/register` (the React UI exposes this flow under the *Student Login* tab). For staff/admin accounts, either seed via the script above or insert records manually.
 
 
-License
-----
-
-MIT
-
-
-**Free Software, Hell Yeah!**
-
-**Suggestions/Improvements are welcome. Want to develop together? You are most welcome.**
-
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
