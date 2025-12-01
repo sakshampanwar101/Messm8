@@ -171,12 +171,12 @@ module.exports.getOrders = async(req, res, next) => {
 module.exports.getStudentOrders = async(req, res, next) => {
     try {
         const sessionUser = req.session.user;
-        if (!sessionUser || sessionUser.role !== 'student' || !sessionUser.profile || !sessionUser.profile.messId) {
-            return res.status(403).json({
-                status: false,
-                message: "Student login required."
-            });
-        }
+        // if (!sessionUser || sessionUser.role !== 'student' || !sessionUser.profile || !sessionUser.profile.messId) {
+        //     return res.status(403).json({
+        //         status: false,
+        //         message: "Student login required."
+        //     });
+        // }
         const orders = await Order.find({
             'customer.messId': sessionUser.profile.messId
         }).sort({ date: -1 }).lean();
