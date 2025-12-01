@@ -83,9 +83,13 @@ module.exports.login = async(req, res, next) => {
         }
         const safeUser = sanitizeUser(user);
         req.session.user = safeUser;
-        return res.status(200).json({
-            status: true,
-            user: safeUser
+        // ensure session is persisted before sending response to avoid race conditions
+        req.session.save((err) => {
+            if (err) return next(err);
+            return res.status(200).json({
+                status: true,
+                user: safeUser
+            });
         });
     } catch (err) {
         return next(err);
