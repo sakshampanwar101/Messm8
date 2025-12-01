@@ -10,7 +10,7 @@
     },
     "production": {
         "PORT": 80,
-        "MONGODB_URI": "mongodb+srv://sakshampanwar444_db_user:Mb7weA7NbjbNOmYU@cluster0.fngtn3p.mongodb.net/foodcourt?appName=Cluster0",
+        "MONGODB_URI": "mongodb+srv://sakshampanwar444_db_user:TR12KuGy2oECOwmn@cluster0.fngtn3p.mongodb.net/foodcourt?appName=Cluster0",
         "EXPRESS_SESSION_SECRET": "SECRET@098",
         "SESSION_NAME": "sidms",
         "SESS_LIFETIME": 8640000
